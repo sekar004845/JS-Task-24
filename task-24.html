@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+	<style>
+	span{
+	  background:red;
+	  color:white;
+	  padding:10px;
+	  } 
+	 button{
+	   background:blue;
+	   border:1px solid blue;
+	   padding:8px;
+	   color:white;
+	   }
+	</style>
+<body>
+    <p><span id="sample"></span></p>
+	<button onclick="alertDelay()">Alert Delay</button>
+	<button onclick="stop()">Stop Time</button>
+	<button onclick="alertStop()">Stop Alert</button>
+<script>
+    function time(){
+     let date=new Date().toLocaleTimeString();
+    
+     let span=document.getElementById("sample");
+    span.innerHTML=date;	
+       }
+	  clear=setInterval(time,1000);
+	  
+	function stop(){
+	  clearInterval(clear);
+	  }
+	  
+	function alertDelay(){
+	 clear1=setTimeout(alertDisplay,1000);
+	 }
+	 
+	function alertDisplay(){
+	  alert("hello I am delay");
+	   }
+	function alertStop(){
+	   clearTimeout(clear1);
+	}
+	
+	  
+</script>
