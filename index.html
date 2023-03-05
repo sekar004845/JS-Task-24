@@ -5,19 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Object</title>
 	<style>
+	body{
+	    background-color:#ffa600;
+		text-align:center;
+		}
+	h1{
+		color: #fff;
+        text-align: center;
+		font-size: 4.2em;
+	}
 	span{
-	  background:red;
+	  background: #ffa600;
+	  border: 2px solid white;
+	  font-size: 2.2em;
 	  color:white;
 	  padding:10px;
+	  
 	  } 
 	 button{
-	   background:blue;
-	   border:1px solid blue;
-	   padding:8px;
-	   color:white;
+		background: #ffa600;
+		border: 2px solid white;
+		font-size: 1.2em;
+		padding: 20px 40px;
+		color: white;
+		cursor: pointer;
+		margin: inherit;
+		border-radius: 10px;
 	   }
 	</style>
 <body>
+    <h1>Stopwatch in Javascript</h1>
     <p><span id="sample"></span></p>
 	<button onclick="alertDelay()">Alert Delay</button>
 	<button onclick="stop()">Stop Time</button>
